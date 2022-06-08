@@ -282,8 +282,10 @@ class Van < Car
 end
 
 class Supercar < Car
-    # inherits shift_gear_with_gear_stick but its actually automatic so it doesn't really need it.
-    def shift_gear_with_paddles(up, down)
+    # it is forced to inherit shift_gear_with_gear_stick but its actually automatic so it doesn't really need it.
+
+    # it has to implement its own way to shift gears
+    def shift_gear_with_paddles(up_or_down)
         # shift gear with paddles
     end
 end
