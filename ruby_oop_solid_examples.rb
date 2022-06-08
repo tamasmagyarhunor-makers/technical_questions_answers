@@ -303,7 +303,7 @@ class PasswordService
     end
 end
 
-# so let's decouple it here and then let the client inject the hasher service needed within the constructor
+# so let's decouple it here and then let the client inject the hasher service needed within the constructor/initializer
 
 class PasswordService
     def initialize(password_hasher)
