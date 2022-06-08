@@ -267,7 +267,7 @@ end
 # Interface Segregation Principle
 
 # Ruby doesn't use interfaces, but if I were to explain it with Ruby, I would use the following example.
-# A supercar will not be using a shift_gear_with_gear_stick but it still inherits it.
+# A supercar will not be using a shift_gear_with_gear_stick but it still inherits it so it would be against this principle.
 # Probably a better solution here would be to have a AutomaticCar < Car and a ManualCar < Car and then
 # both would be able to implement their own ways to switch gears.
 
