@@ -259,7 +259,7 @@ json_response = JsonRespone.new()
 
 # see how our send_response function is expecting a Response type parameter to be passed in.
 # LSP says that we should be able to then pass in a JsonResponse type in too, since it is a child class
-# of the Response class and this
+# of the Response class and this should not break the application
 def send_response(Response response): Response
     return response
 end
