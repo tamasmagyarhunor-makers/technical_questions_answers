@@ -80,7 +80,7 @@ end
 
 d = Document.new('cover letter')
 d.name
-# => 'name1'
+# => 'cover letter'
 d.name = 'Kims cover letter' 
 # => error
 d.set_name('Kims cover letter')
