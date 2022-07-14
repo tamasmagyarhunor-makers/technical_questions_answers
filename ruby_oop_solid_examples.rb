@@ -254,8 +254,8 @@ class JsonRespone < Response
 end
 
 # although Ruby doesn't do any typehinting, I am trying to represent that down here. 
-response = Response.new()
-json_response = JsonRespone.new()
+Response response = Response.new()
+JsonResponse json_response = JsonRespone.new()
 
 # see how our send_response function is expecting a Response type parameter to be passed in.
 # LSP says that we should be able to then pass in a JsonResponse type in too, since it is a child class
