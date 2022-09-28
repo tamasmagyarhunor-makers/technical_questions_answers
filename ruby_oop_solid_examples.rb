@@ -298,7 +298,7 @@ class PasswordService
         @hasher = Base64Hasher.new()
     end
 
-    def hash_password(passowrd)
+    def hash_password(password)
         @hasher.hash_password(password)
     end
 end
@@ -306,7 +306,7 @@ end
 # so let's decouple it here and then let the client inject the hasher service needed within the constructor/initializer
 
 class PasswordService
-    def initialize(password_hasher = Base64Hasher.new)
+    def initialize(password_hasher)
         @password_hasher = password_hasher
     end
 
