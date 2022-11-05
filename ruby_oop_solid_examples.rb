@@ -77,7 +77,7 @@ class Document
         #throw error if name is not a String
         #throw error if name is more than 12 characters
         #if all these pass:
-        @name = name
+        set_name(name)
     end
     
     private 
