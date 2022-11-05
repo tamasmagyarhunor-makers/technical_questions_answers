@@ -69,12 +69,20 @@ class Document
       @name = name
     end
   
-    def set_name(name)
-      @name = name
-    end
-
     def get_name
       @name
+    end
+    
+    def change_document_name(name)
+        #throw error if name is not a String
+        #throw error if name is more than 12 characters
+        #if all these pass:
+        @name = name
+    end
+    
+    private 
+    def set_name(name)
+      @name = name
     end
 end
 
